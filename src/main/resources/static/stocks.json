@@ -1,0 +1,27 @@
+[
+  {
+    "name" :"paper",
+    "price":"1.01",
+    "lastUpdated": "2021-07-15T11:40:00"
+  },
+  {
+    "name" :"pencil",
+    "price":"4.01",
+    "lastUpdated": "2021-07-23T12:24:00"
+  },
+  {
+    "name" :"notebook",
+    "price":"6.01",
+    "lastUpdated": "2021-07-15T01:54:00"
+  },
+  {
+    "name" :"sticker",
+    "price":"12.05",
+    "lastUpdated": "2021-07-20T04:54:00"
+  },
+  {
+    "name" :"glass",
+    "price":"1.41",
+    "lastUpdated": "2021-07-17T01:54:00"
+  }
+]
