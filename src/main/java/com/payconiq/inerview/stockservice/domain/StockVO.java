@@ -21,5 +21,6 @@ public class StockVO {
     @NotNull(groups = PriceValidation.class)
     @JsonFormat(shape = JsonFormat.Shape.STRING)
     BigDecimal price;
+
     LocalDateTime lastUpdated;
 }

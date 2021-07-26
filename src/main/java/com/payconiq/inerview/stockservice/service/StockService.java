@@ -37,6 +37,7 @@ public class StockService {
         return toVO(getStockById(stockId));
     }
 
+    @Transactional(isolation = Isolation.READ_COMMITTED, rollbackFor = Exception.class)
     public List<StockVO> findAll() {
         return StreamSupport.stream(stockRepository.findAll().spliterator(), false)
                 .map(StockMapper::toVO)
@@ -44,7 +45,7 @@ public class StockService {
 
     }
 
-    @Transactional(isolation = Isolation.REPEATABLE_READ, rollbackFor = Exception.class)
+    @Transactional(isolation = Isolation.READ_COMMITTED, rollbackFor = Exception.class)
     public StockVO updatePrice(Long stockId, BigDecimal updatedPrice) {
         StockEntity currentStock = getStockById(stockId);
         currentStock.setPrice(updatedPrice);

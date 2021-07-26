@@ -21,7 +21,7 @@ import static org.hamcrest.Matchers.*;
 
 @SpringBootTest(classes = StockServiceApplication.class,
         webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class StockControllerTest {
+public class StockControllerIT {
 
     @LocalServerPort
     private int port;
