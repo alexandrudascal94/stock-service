@@ -21,15 +21,13 @@ endpoints:
 
 ### API sample
 
-```json
 
 Request:
 
 GET localhost:8080/api/stocks/
         
 Response: 
-        
- Body
+```json
 [
     {
         "name": "paper",
@@ -58,15 +56,13 @@ Response:
     }
 ]
 ```
-```json
 
 Request:
 
 GET localhost:8080/api/stocks/1
         
 Response: 
-        
- Body
+```json
 {
   "name": "paper",
   "price": "1.01",
@@ -74,38 +70,38 @@ Response:
 }
 ```
 
-```json
+
 
 Request:
 
 POST localhost:8080/api/stocks/
-Body
-
+```json
 {
   "name": "paper1",
   "price": "1.01",
   "lastUpdated": "2021-07-15T11:40:00"
 }
-          
+```   
 Response:
+```
   Location: /api/stocks/6
 ```
 
 
-```json
 
 Request:
 
 POST localhost:8080/api/stocks/2
 Body
+```json
 
 {
   "price": "11.1"
 }
-          
+```
+
 Response:
- 
-  Body
+```json 
 {
   "name": "pencil",
   "price": "11.1",
@@ -119,21 +115,21 @@ Response:
 
 #### Requirements
 
-    * Java 11
-    * Maven 3+
+    Java 11
+    Maven 3+
 
 #### Build
 
 clone the git repository or downland the zip file and unzip
 
-To build the application run command:
+To build the application run the command:
 
 ```
 mvn clean install
 ```
 
 #### Run
-Then run the application with command:
+Then run the application with the command:
 
 ```
 java -jar target/stock-service-0.0.1.jar
